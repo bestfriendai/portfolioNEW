@@ -19,6 +19,11 @@ const Hero = () => {
 
   return (
     <div className="relative flex flex-col justify-center overflow-hidden border-b pt-12">
+      {/* Gradient background effect */}
+      <div className="absolute inset-0 -z-10 overflow-hidden">
+        <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-violet-500/10 blur-3xl" />
+        <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-blue-500/10 blur-3xl" />
+      </div>
       <div className="px-4 pb-6 md:px-8 md:pb-14 lg:px-20">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -59,7 +64,7 @@ const Hero = () => {
               </div>
               <div className="h-px w-12 bg-[#e1e1e1]" />
               <span className="text-foreground/50 font-mono text-xs md:text-sm">
-                Full-Stack Developer
+                Full-Stack Developer & Entrepreneur
               </span>
             </motion.div>
 
@@ -73,7 +78,7 @@ const Hero = () => {
               <span className="text-foreground">Hey, I&apos;m </span>
               <span className="relative text-[#8cc2ff] italic">
                 <Typewriter
-                  text={["Siddharth", "Stark"]}
+                  text={["Patrick Francis", "DontFollowPat"]}
                   speed={85}
                   waitTime={1500}
                   deleteSpeed={40}
@@ -89,8 +94,8 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-foreground/60 max-w-2xl text-sm font-light md:text-base"
             >
-              Fullstack developer with a passion for building web applications.
-              I specialize in React, Next.js, Node.js, and TypeScript.
+              Full-stack developer and entrepreneur building impactful mobile and web apps.
+              Creator of PrayAi.org and FakeFlex.app - helping millions connect, grow, and thrive.
             </motion.p>
 
             <motion.div
@@ -133,9 +138,9 @@ const Hero = () => {
               label: "Portfolio views",
               value: umamiStats?.data?.pageviews ?? 0,
             },
-            { label: "Years of Experience", value: 2 },
-            { label: "Projects Shipped", value: 8 },
-            { label: "Happy Clients", value: 5 },
+            { label: "Years of Experience", value: 5 },
+            { label: "Apps Launched", value: 10 },
+            { label: "Active Users", value: 50000 },
           ].map((stat, i) => (
             <div
               key={i}

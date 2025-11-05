@@ -16,10 +16,15 @@ export const metadata: Metadata = {
   description: siteConfig.description,
   metadataBase: new URL(siteConfig.url),
   keywords: [
-    "portfolio",
+    "Patrick Francis",
+    "DontFollowPat",
     "developer portfolio",
-    "creative",
-    "fullstack",
+    "entrepreneur",
+    "PrayAi",
+    "FakeFlex",
+    "fullstack developer",
+    "mobile apps",
+    "React Native",
     "nextjs",
   ],
 
@@ -27,7 +32,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/og-image.png",
-        alt: "Stark's Portfolio",
+        alt: "Patrick Francis - DontFollowPat.com Portfolio",
       },
     ],
   },
