@@ -13,52 +13,59 @@ import { motion } from "motion/react";
 const Projects = () => {
   const projects = [
     {
-      title: "Developer Portfolio",
+      title: "PrayAi.org",
       description:
-        "A personal portfolio website showcasing projects, skills, and contact information.",
-      tags: ["Portfolio", "Fullstack", "Personal"],
-      github: "https://github.com/NotStark/portfolio",
+        "AI-powered faith companion helping millions deepen their spiritual journey through personalized prayer, scripture, and guidance. Available on web and mobile (iOS & Android).",
+      tags: ["AI", "Mobile", "Faith", "React Native"],
+      github: null,
+      image: "/projects/prayai-screenshot.png",
+      live: "https://prayai.org",
+      date: "Jan, 2024",
+      status: "completed",
+    },
+    {
+      title: "FakeFlex.app",
+      description: "Social fitness platform connecting thousands of users to track workouts, share progress, and stay motivated. Cross-platform mobile app with real-time updates.",
+      tags: ["Social", "Fitness", "Mobile", "Fullstack"],
+      github: null,
+      image: "/projects/fakeflex-screenshot.png",
+      live: "https://fakeflex.app",
+      date: "Mar, 2024",
+      status: "completed",
+    },
+    {
+      title: "DontFollowPat.com",
+      description:
+        "Personal portfolio and brand hub showcasing projects, technical expertise, and entrepreneurial journey.",
+      tags: ["Portfolio", "Next.js", "Personal"],
+      github: `https://github.com/${env.NEXT_PUBLIC_GITHUB_USERNAME}/portfolio`,
       image: "/projects/portfolio-screenshot.png",
       live: env.NEXT_PUBLIC_APP_URL,
-      date: "Sep, 2025",
-      status: "completed",
-    },
-    {
-      title: "Telegram Bot",
-      description: "A telegram group management bot built with Pyrogram.",
-      tags: ["Bot", "Management", "Telegram"],
-      github: "https://github.com/Notstark/TelegramBot",
-      image: "/projects/telegrambot-screenshot.png",
-      live: "https://t.me/HyugaGuardianBot",
-      date: "Oct, 2024",
-      status: "completed",
-    },
-    {
-      title: "Anime Edge",
-      description:
-        "A feature-rich anime streaming platform built with Next.js, offering fast search, curated collections, and a smooth viewing experience.",
-      tags: ["Anime", "Streaming", "Fullstack"],
-      github: null,
-      image: "/projects/animeedge-screenshot.png",
-      live: null,
-      date: "Dec, 2024",
+      date: "Nov, 2025",
       status: "completed",
     },
   ];
 
   const tagColors = {
-    Portfolio: "bg-blue-500/10 text-blue-600 border-blue-500/30",
+    AI: "bg-violet-500/10 text-violet-600 border-violet-500/30",
+    Mobile: "bg-blue-500/10 text-blue-600 border-blue-500/30",
+    Faith: "bg-amber-500/10 text-amber-600 border-amber-500/30",
+    "React Native": "bg-cyan-500/10 text-cyan-600 border-cyan-500/30",
+    Social: "bg-pink-500/10 text-pink-600 border-pink-500/30",
+    Fitness: "bg-green-500/10 text-green-600 border-green-500/30",
     Fullstack: "bg-orange-500/10 text-orange-600 border-orange-500/30",
+    Portfolio: "bg-blue-500/10 text-blue-600 border-blue-500/30",
+    "Next.js": "bg-slate-500/10 text-slate-600 border-slate-500/30",
     Personal: "bg-purple-500/10 text-purple-600 border-purple-500/30",
-    Telegram: "bg-cyan-500/10 text-cyan-600 border-cyan-500/30",
-    Management: "bg-emerald-500/10 text-emerald-600 border-emerald-500/30",
-    Bot: "bg-teal-500/10 text-teal-600 border-teal-500/30",
-    Anime: "bg-pink-500/10 text-pink-600 border-pink-500/30",
-    Streaming: "bg-indigo-500/10 text-indigo-600 border-indigo-500/30",
   };
 
   return (
     <SectionHeading id="projects" text="Projects">
+      {/* Gradient background */}
+      <div className="absolute inset-0 -z-10 overflow-hidden">
+        <div className="absolute top-20 left-1/4 h-96 w-96 rounded-full bg-violet-500/5 blur-3xl" />
+        <div className="absolute bottom-20 right-1/4 h-96 w-96 rounded-full bg-blue-500/5 blur-3xl" />
+      </div>
       <div className="divide-y">
         {projects.map((project, index) => (
           <motion.div

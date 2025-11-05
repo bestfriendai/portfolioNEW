@@ -31,7 +31,7 @@ const About = () => {
           <div className="text-foreground/70 bg-muted/20 relative z-10 mx-auto mt-6 max-w-3xl rounded-lg border-2 border-dotted text-sm leading-relaxed backdrop-blur-3xl md:text-base">
             <div className="p-6">
               <p className="">
-                I build fast, friendly products that make users smile
+                I'm Patrick Francis, a full-stack developer and entrepreneur building apps that impact millions
                 <span className="mx-1 inline-block align-middle">
                   <span className="ring-offset-background relative inline-block w-12 rotate-6 overflow-hidden rounded-md ring ring-offset-2">
                     <img
@@ -41,12 +41,11 @@ const About = () => {
                     />
                   </span>
                 </span>
-                —and sometimes their dogs too.
+                of lives worldwide.
               </p>
 
               <p className="">
-                Stack: Next.js, React, TypeScript, Tailwind. Clean APIs, tiny
-                micro‑interactions, big delight
+                Creator of <strong>PrayAi.org</strong> (faith-based AI companion) and <strong>FakeFlex.app</strong> (social fitness platform). Stack: React Native, Next.js, TypeScript, Node.js
                 <span className="mx-1 inline-block align-middle">
                   <span className="ring-offset-background relative inline-block w-12 -rotate-3 overflow-hidden rounded-md ring ring-offset-2">
                     <img
@@ -60,7 +59,7 @@ const About = () => {
               </p>
 
               <p className="">
-                Off‑duty: coffee, sketching animations, and One Piece marathons
+                I specialize in mobile-first experiences, scalable APIs, and products that solve real problems for real people
                 <span className="mx-1 inline-block align-middle">
                   <span className="ring-offset-background relative inline-block w-12 rotate-3 overflow-hidden rounded-md ring ring-offset-2">
                     <img
@@ -74,8 +73,7 @@ const About = () => {
               </p>
 
               <p className="">
-                Best in small teams: quick loops, clear comms, high‑fives after
-                deploy
+                From concept to launch, I build products with clean code, thoughtful design, and a focus on user delight
                 <span className="mx-1 inline-block align-middle">
                   <span className="ring-offset-background relative inline-block w-12 -rotate-2 overflow-hidden rounded-md ring ring-offset-2">
                     <img
@@ -91,7 +89,7 @@ const About = () => {
               </p>
 
               <p>
-                Got a messy brief or a half‑baked idea?
+                Have an app idea or need a technical co-founder?
                 <span className="mx-1 inline-block align-middle">
                   <span className="ring-offset-background relative inline-block w-12 rotate-2 overflow-hidden rounded-md ring ring-offset-2">
                     <img
@@ -101,7 +99,7 @@ const About = () => {
                     />
                   </span>
                 </span>
-                Let’s turn it into something real.
+                Let's build something amazing together.
               </p>
             </div>
 
@@ -149,10 +147,10 @@ const About = () => {
                     />
                   </div>
                   <h3 className="font-incognito text-2xl font-semibold">
-                    Siddharth
+                    Patrick Francis
                   </h3>
                   <p className="text-foreground/60 mt-1 font-mono text-sm">
-                    @stark
+                    @DontFollowPat
                   </p>
 
                   {/* Status badges */}
@@ -176,8 +174,8 @@ const About = () => {
                         ? "Not Available"
                         : "Available"}
                     </Badge>
-                    <Badge variant="outline">2+ Years</Badge>
-                    <Badge variant="outline">Full-Stack</Badge>
+                    <Badge variant="outline">5+ Years</Badge>
+                    <Badge variant="outline">Entrepreneur</Badge>
                   </div>
                 </div>
               </div>
