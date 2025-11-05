@@ -117,7 +117,7 @@ const slideInBottom: Variants = {
 };
 
 const socialLinks = [
-  { icon: Github, label: "Github", link: `${siteConfig.github}/portfolio` },
+  { icon: Github, label: "Github", link: siteConfig.github },
   { icon: Mail, label: "Email", link: `mailto:${siteConfig.email}` },
   { icon: Twitter, label: "Twitter", link: siteConfig.twitter },
 ];
@@ -173,7 +173,7 @@ const MainScreen: React.FC<{
           <>
             Hi! , I am{" "}
             <Typewriter
-              text={["a developer", "Siddharth", "Stark"]}
+              text={["an app creator", "Patrick", "Pat"]}
               speed={70}
               waitTime={1500}
               deleteSpeed={40}

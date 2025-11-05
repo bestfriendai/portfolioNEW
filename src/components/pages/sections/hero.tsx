@@ -73,7 +73,7 @@ const Hero = () => {
               <span className="text-foreground">Hey, I&apos;m </span>
               <span className="relative text-[#8cc2ff] italic">
                 <Typewriter
-                  text={["Siddharth", "Stark"]}
+                  text={["Patrick", "Pat"]}
                   speed={85}
                   waitTime={1500}
                   deleteSpeed={40}
@@ -89,8 +89,8 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-foreground/60 max-w-2xl text-sm font-light md:text-base"
             >
-              Fullstack developer with a passion for building web applications.
-              I specialize in React, Next.js, Node.js, and TypeScript.
+              App creator and fullstack developer building innovative solutions.
+              Creator of PrayAI.org and FakeFlex.app.
             </motion.p>
 
             <motion.div

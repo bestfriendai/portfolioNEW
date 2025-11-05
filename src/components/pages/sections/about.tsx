@@ -31,7 +31,7 @@ const About = () => {
           <div className="text-foreground/70 bg-muted/20 relative z-10 mx-auto mt-6 max-w-3xl rounded-lg border-2 border-dotted text-sm leading-relaxed backdrop-blur-3xl md:text-base">
             <div className="p-6">
               <p className="">
-                I build fast, friendly products that make users smile
+                I build apps that solve real problems and bring value to users
                 <span className="mx-1 inline-block align-middle">
                   <span className="ring-offset-background relative inline-block w-12 rotate-6 overflow-hidden rounded-md ring ring-offset-2">
                     <img
@@ -41,12 +41,11 @@ const About = () => {
                     />
                   </span>
                 </span>
-                —and sometimes their dogs too.
+                —from spiritual wellness to creative tools.
               </p>
 
               <p className="">
-                Stack: Next.js, React, TypeScript, Tailwind. Clean APIs, tiny
-                micro‑interactions, big delight
+                Creator of PrayAI.org (AI-powered prayer companion) and FakeFlex.app (creative screenshot generator). Building with Next.js, React, TypeScript, and modern AI
                 <span className="mx-1 inline-block align-middle">
                   <span className="ring-offset-background relative inline-block w-12 -rotate-3 overflow-hidden rounded-md ring ring-offset-2">
                     <img
@@ -60,7 +59,7 @@ const About = () => {
               </p>
 
               <p className="">
-                Off‑duty: coffee, sketching animations, and One Piece marathons
+                Off‑duty: exploring new tech, coffee runs, and brainstorming the next big idea
                 <span className="mx-1 inline-block align-middle">
                   <span className="ring-offset-background relative inline-block w-12 rotate-3 overflow-hidden rounded-md ring ring-offset-2">
                     <img
@@ -74,8 +73,7 @@ const About = () => {
               </p>
 
               <p className="">
-                Best in small teams: quick loops, clear comms, high‑fives after
-                deploy
+                I love turning ideas into reality: from concept to launch, polished and ready
                 <span className="mx-1 inline-block align-middle">
                   <span className="ring-offset-background relative inline-block w-12 -rotate-2 overflow-hidden rounded-md ring ring-offset-2">
                     <img
@@ -91,7 +89,7 @@ const About = () => {
               </p>
 
               <p>
-                Got a messy brief or a half‑baked idea?
+                Got an app idea you want to bring to life?
                 <span className="mx-1 inline-block align-middle">
                   <span className="ring-offset-background relative inline-block w-12 rotate-2 overflow-hidden rounded-md ring ring-offset-2">
                     <img
@@ -101,7 +99,7 @@ const About = () => {
                     />
                   </span>
                 </span>
-                Let’s turn it into something real.
+                Let's make it happen.
               </p>
             </div>
 
@@ -149,10 +147,10 @@ const About = () => {
                     />
                   </div>
                   <h3 className="font-incognito text-2xl font-semibold">
-                    Siddharth
+                    Patrick Francis
                   </h3>
                   <p className="text-foreground/60 mt-1 font-mono text-sm">
-                    @stark
+                    @DontFollowPat
                   </p>
 
                   {/* Status badges */}

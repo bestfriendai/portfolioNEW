@@ -13,35 +13,35 @@ import { motion } from "motion/react";
 const Projects = () => {
   const projects = [
     {
-      title: "Developer Portfolio",
+      title: "PrayAI.org",
       description:
-        "A personal portfolio website showcasing projects, skills, and contact information.",
+        "An AI-powered prayer companion that helps users connect with their spirituality through personalized prayers, daily inspiration, and guided meditation.",
+      tags: ["AI", "Spiritual", "Fullstack"],
+      github: null,
+      image: "/projects/prayai-screenshot.png",
+      live: "https://prayai.org",
+      date: "2024",
+      status: "completed",
+    },
+    {
+      title: "FakeFlex.app",
+      description: "A creative screenshot generator that lets users create custom, shareable images perfect for social media, portfolios, and presentations.",
+      tags: ["Creative", "Tools", "Web App"],
+      github: null,
+      image: "/projects/fakeflex-screenshot.png",
+      live: "https://fakeflex.app",
+      date: "2024",
+      status: "completed",
+    },
+    {
+      title: "DontFollowPat.com",
+      description:
+        "This portfolio website showcasing innovative apps and projects by Patrick Francis.",
       tags: ["Portfolio", "Fullstack", "Personal"],
-      github: "https://github.com/NotStark/portfolio",
+      github: siteConfig.github,
       image: "/projects/portfolio-screenshot.png",
       live: env.NEXT_PUBLIC_APP_URL,
-      date: "Sep, 2025",
-      status: "completed",
-    },
-    {
-      title: "Telegram Bot",
-      description: "A telegram group management bot built with Pyrogram.",
-      tags: ["Bot", "Management", "Telegram"],
-      github: "https://github.com/Notstark/TelegramBot",
-      image: "/projects/telegrambot-screenshot.png",
-      live: "https://t.me/HyugaGuardianBot",
-      date: "Oct, 2024",
-      status: "completed",
-    },
-    {
-      title: "Anime Edge",
-      description:
-        "A feature-rich anime streaming platform built with Next.js, offering fast search, curated collections, and a smooth viewing experience.",
-      tags: ["Anime", "Streaming", "Fullstack"],
-      github: null,
-      image: "/projects/animeedge-screenshot.png",
-      live: null,
-      date: "Dec, 2024",
+      date: "2025",
       status: "completed",
     },
   ];
@@ -50,11 +50,11 @@ const Projects = () => {
     Portfolio: "bg-blue-500/10 text-blue-600 border-blue-500/30",
     Fullstack: "bg-orange-500/10 text-orange-600 border-orange-500/30",
     Personal: "bg-purple-500/10 text-purple-600 border-purple-500/30",
-    Telegram: "bg-cyan-500/10 text-cyan-600 border-cyan-500/30",
-    Management: "bg-emerald-500/10 text-emerald-600 border-emerald-500/30",
-    Bot: "bg-teal-500/10 text-teal-600 border-teal-500/30",
-    Anime: "bg-pink-500/10 text-pink-600 border-pink-500/30",
-    Streaming: "bg-indigo-500/10 text-indigo-600 border-indigo-500/30",
+    AI: "bg-cyan-500/10 text-cyan-600 border-cyan-500/30",
+    Spiritual: "bg-emerald-500/10 text-emerald-600 border-emerald-500/30",
+    Creative: "bg-teal-500/10 text-teal-600 border-teal-500/30",
+    Tools: "bg-pink-500/10 text-pink-600 border-pink-500/30",
+    "Web App": "bg-indigo-500/10 text-indigo-600 border-indigo-500/30",
   };
 
   return (
