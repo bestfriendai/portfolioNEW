@@ -15,7 +15,7 @@ const Projects = () => {
     {
       title: "PrayAI.org",
       description:
-        "An AI-powered prayer companion that helps users connect with their spirituality through personalized prayers, daily inspiration, and guided meditation.",
+        "An AI-powered spiritual companion that personalizes prayers, provides daily inspiration, and guides users through meaningful meditation experiences. Helping thousands connect with their faith in a modern, accessible way.",
       tags: ["AI", "Spiritual", "Fullstack"],
       github: null,
       image: "/projects/prayai-screenshot.png",
@@ -25,7 +25,7 @@ const Projects = () => {
     },
     {
       title: "FakeFlex.app",
-      description: "A creative screenshot generator that lets users create custom, shareable images perfect for social media, portfolios, and presentations.",
+      description: "A powerful creative tool for generating stunning, customizable screenshots and mockups. Perfect for social media content, portfolio presentations, and marketing materials. Trusted by creators and designers worldwide.",
       tags: ["Creative", "Tools", "Web App"],
       github: null,
       image: "/projects/fakeflex-screenshot.png",
@@ -36,8 +36,8 @@ const Projects = () => {
     {
       title: "DontFollowPat.com",
       description:
-        "This portfolio website showcasing innovative apps and projects by Patrick Francis.",
-      tags: ["Portfolio", "Fullstack", "Personal"],
+        "A modern, interactive portfolio showcasing innovative web applications and creative projects. Built with Next.js 15, Prisma, and cutting-edge UI components to deliver a seamless, engaging user experience.",
+      tags: ["Portfolio", "Fullstack", "Next.js"],
       github: siteConfig.github,
       image: "/projects/portfolio-screenshot.png",
       live: env.NEXT_PUBLIC_APP_URL,
@@ -49,7 +49,7 @@ const Projects = () => {
   const tagColors = {
     Portfolio: "bg-blue-500/10 text-blue-600 border-blue-500/30",
     Fullstack: "bg-orange-500/10 text-orange-600 border-orange-500/30",
-    Personal: "bg-purple-500/10 text-purple-600 border-purple-500/30",
+    "Next.js": "bg-slate-500/10 text-slate-600 border-slate-500/30",
     AI: "bg-cyan-500/10 text-cyan-600 border-cyan-500/30",
     Spiritual: "bg-emerald-500/10 text-emerald-600 border-emerald-500/30",
     Creative: "bg-teal-500/10 text-teal-600 border-teal-500/30",

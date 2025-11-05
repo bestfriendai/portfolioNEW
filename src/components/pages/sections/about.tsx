@@ -17,9 +17,9 @@ const About = () => {
       <div className="flex items-center lg:h-[95vh]">
         <div className="relative flex-1 px-4 py-12 md:px-12">
           <h2 className="font-incognito text-2xl font-semibold md:text-5xl lg:text-4xl">
-            Meet the Developer,
+            Meet the Creator,
             <br />
-            Not Just the Code
+            Not Just the Apps
           </h2>
 
           <HeadingLine className="mt-6" lineWidth={40} />
@@ -45,7 +45,7 @@ const About = () => {
               </p>
 
               <p className="">
-                Creator of PrayAI.org (AI-powered prayer companion) and FakeFlex.app (creative screenshot generator). Building with Next.js, React, TypeScript, and modern AI
+                Creator of <strong>PrayAI.org</strong> (AI-powered prayer companion) and <strong>FakeFlex.app</strong> (creative screenshot generator). Built with Next.js, React, TypeScript, and cutting-edge AI technologies
                 <span className="mx-1 inline-block align-middle">
                   <span className="ring-offset-background relative inline-block w-12 -rotate-3 overflow-hidden rounded-md ring ring-offset-2">
                     <img
@@ -73,7 +73,7 @@ const About = () => {
               </p>
 
               <p className="">
-                I love turning ideas into reality: from concept to launch, polished and ready
+                Passionate about turning ideas into reality: from concept to launch, fully polished and production-ready
                 <span className="mx-1 inline-block align-middle">
                   <span className="ring-offset-background relative inline-block w-12 -rotate-2 overflow-hidden rounded-md ring ring-offset-2">
                     <img
@@ -174,8 +174,8 @@ const About = () => {
                         ? "Not Available"
                         : "Available"}
                     </Badge>
-                    <Badge variant="outline">2+ Years</Badge>
-                    <Badge variant="outline">Full-Stack</Badge>
+                    <Badge variant="outline">3+ Years</Badge>
+                    <Badge variant="outline">App Creator</Badge>
                   </div>
                 </div>
               </div>

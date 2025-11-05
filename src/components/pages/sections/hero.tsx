@@ -59,7 +59,7 @@ const Hero = () => {
               </div>
               <div className="h-px w-12 bg-[#e1e1e1]" />
               <span className="text-foreground/50 font-mono text-xs md:text-sm">
-                Full-Stack Developer
+                App Creator & Developer
               </span>
             </motion.div>
 
@@ -89,8 +89,8 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-foreground/60 max-w-2xl text-sm font-light md:text-base"
             >
-              App creator and fullstack developer building innovative solutions.
-              Creator of PrayAI.org and FakeFlex.app.
+              Building innovative web applications that solve real problems.
+              Creator of <span className="text-foreground font-medium">PrayAI.org</span> and <span className="text-foreground font-medium">FakeFlex.app</span>.
             </motion.p>
 
             <motion.div
@@ -105,7 +105,7 @@ const Hero = () => {
                 className="group/btn border-2 font-medium"
               >
                 <a href={"#contact"}>
-                  Lets Connect
+                  Let's Connect
                   <ArrowUpRight className="ml-1 h-3 w-3 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
                 </a>
               </Button>
@@ -130,12 +130,12 @@ const Hero = () => {
         <div className="grid grid-cols-2 border md:max-w-3/4 md:border-0 md:border-t md:border-r lg:grid-cols-4">
           {[
             {
-              label: "Portfolio views",
+              label: "Portfolio Views",
               value: umamiStats?.data?.pageviews ?? 0,
             },
-            { label: "Years of Experience", value: 2 },
-            { label: "Projects Shipped", value: 8 },
-            { label: "Happy Clients", value: 5 },
+            { label: "Years Creating", value: 3 },
+            { label: "Apps Launched", value: 10 },
+            { label: "Happy Users", value: 1000 },
           ].map((stat, i) => (
             <div
               key={i}

@@ -1,11 +1,18 @@
 
-# Stark's Portfolio
+# DontFollowPat.com
 
 ![Portfolio Screenshot](public/projects/portfolio-screenshot.png)
 
-A modern, interactive **[developer portfolio](https://next-portfolio-stark.vercel.app)** built with **Next.js 15**, **Prisma**, and **shadcn/ui**
+A modern, interactive **app showcase portfolio** built with **Next.js 15**, **Prisma**, and **shadcn/ui** by Patrick Francis.
 
-> This portfolio showcases my work, my projects, and my personality
+> Showcasing innovative apps including PrayAI.org and FakeFlex.app
+
+---
+
+## Featured Apps
+
+- **[PrayAI.org](https://prayai.org)** - AI-powered prayer companion
+- **[FakeFlex.app](https://fakeflex.app)** - Creative screenshot generator
 
 ---
 
@@ -40,9 +47,9 @@ A modern, interactive **[developer portfolio](https://next-portfolio-stark.verce
 
 ### Clone the repository
 ```bash
-git clone https://github.com/NotStark/portfolio.git
-cd portfolio
-````
+git clone https://github.com/bestfriendai/portfolioNEW.git
+cd portfolioNEW
+```
 
 ### Install dependencies 
 
@@ -84,19 +91,15 @@ Deployed easily via [Vercel](https://vercel.com/) (recommended).
 
 | Platform     | Link                                                             |
 | ------------ | ---------------------------------------------------------------- |
-| 💬 Telegram  | [https://t.me/EternalVortex](https://t.me/EternalVortex)      
-| 🐦 Twitter   | [https://twitter.com/NotStark101](https://twitter.com/NotStark101) |         |
-| 💻 Discord   | `_notstark`                                            |
-              
+| 🐦 Twitter   | [https://x.com/DontFollowPat](https://x.com/DontFollowPat) |
+| 💬 Telegram  | [https://t.me/DontFollowPat](https://t.me/DontFollowPat) |
+
 ---
 
+## License
 
+MIT License - feel free to use this template for your own portfolio!
 
-## Star History
-**⭐ If you liked this project, give it a star — it helps a lot!**
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Notstark/Portfolio&type=Date&theme=dark" />
-  <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Notstark/Portfolio&type=Date" />
-  <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Notstark/Portfolio&type=Date" />
-</picture>
+---
 
+**Built with ❤️ by Patrick Francis**
