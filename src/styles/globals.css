@@ -183,6 +183,11 @@
   }
   body {
     @apply bg-background text-foreground;
+    /* Prevent text size adjustment on mobile devices */
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    /* Improve touch scrolling on iOS */
+    -webkit-overflow-scrolling: touch;
   }
 
   h1,
@@ -196,6 +201,17 @@
   h2,
   h3 {
     @apply font-semibold;
+  }
+
+  /* Better tap targets for mobile */
+  @media (max-width: 640px) {
+    button,
+    a,
+    input,
+    select,
+    textarea {
+      @apply touch-manipulation;
+    }
   }
 }
 

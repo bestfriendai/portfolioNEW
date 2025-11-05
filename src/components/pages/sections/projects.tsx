@@ -85,7 +85,7 @@ const Projects = () => {
                 </div>
 
                 {/* Image Container */}
-                <div className="relative inset-0 z-10 p-8 md:p-12 lg:p-16">
+                <div className="relative inset-0 z-10 p-4 sm:p-6 md:p-12 lg:p-16">
                   <div className="group/image relative">
                     {/* Frame corners */}
                     <div className="border-foreground/20 absolute -top-2 -left-2 h-8 w-8 border-t-2 border-l-2 transition-all group-hover:-top-3 group-hover:-left-3" />
@@ -111,49 +111,49 @@ const Projects = () => {
               </div>
 
               {/* Content Side  */}
-              <div className="relative flex flex-col justify-center overflow-hidden p-8 md:p-12 lg:p-16">
+              <div className="relative flex flex-col justify-center overflow-hidden p-4 sm:p-6 md:p-12 lg:p-16">
                 {/* Date & Status */}
-                <div className="mb-6 flex flex-wrap items-center gap-3">
-                  <time className="text-muted-foreground font-mono text-xs">
+                <div className="mb-4 flex flex-wrap items-center gap-2 sm:mb-6 sm:gap-3">
+                  <time className="text-muted-foreground font-mono text-[10px] sm:text-xs">
                     {project.date}
                   </time>
-                  <div className="bg-border h-4 w-px" />
+                  <div className="bg-border h-3 w-px sm:h-4" />
                   <div className="inline-flex items-center gap-1.5">
                     <div
                       className={cn(
-                        "h-2 w-2 rounded-full",
+                        "h-1.5 w-1.5 rounded-full sm:h-2 sm:w-2",
                         project.status === "completed"
                           ? "animate-pulse bg-green-500"
                           : "animate-pulse bg-yellow-500",
                       )}
                     />
-                    <span className="text-muted-foreground font-mono text-xs uppercase">
+                    <span className="text-muted-foreground font-mono text-[10px] uppercase sm:text-xs">
                       {project.status}
                     </span>
                   </div>
                 </div>
 
                 {/* Title  */}
-                <div className="mb-6">
-                  <h3 className="font-incognito text-3xl font-bold lg:text-4xl">
+                <div className="mb-4 sm:mb-6">
+                  <h3 className="font-incognito text-2xl font-bold sm:text-3xl lg:text-4xl">
                     {project.title}
                   </h3>
-                  <HeadingLine className="mt-3" />
+                  <HeadingLine className="mt-2 sm:mt-3" />
                 </div>
 
                 {/* Description */}
-                <p className="text-muted-foreground mb-6 text-sm leading-relaxed md:text-base">
+                <p className="text-muted-foreground mb-4 text-sm leading-relaxed sm:mb-6 md:text-base">
                   {project.description}
                 </p>
 
                 {/* Tags  */}
-                <div className="mb-8 flex flex-wrap gap-2">
+                <div className="mb-6 flex flex-wrap gap-1.5 sm:mb-8 sm:gap-2">
                   {project.tags.map((tag) => (
                     <Badge
                       key={tag}
                       variant="outline"
                       className={cn(
-                        "border font-mono text-xs",
+                        "border font-mono text-[10px] sm:text-xs",
                         tagColors[tag as keyof typeof tagColors],
                       )}
                     >
@@ -163,7 +163,7 @@ const Projects = () => {
                 </div>
 
                 {/*  Buttons */}
-                <div className="flex flex-wrap gap-3">
+                <div className="flex flex-col gap-2 sm:flex-row sm:gap-3">
                   <Button
                     asChild
                     variant="default"
@@ -177,7 +177,8 @@ const Projects = () => {
                       rel="noopener noreferrer"
                     >
                       <Github className="mr-2 h-4 w-4" />
-                      View Code
+                      <span className="hidden sm:inline">View Code</span>
+                      <span className="sm:hidden">Code</span>
                       <ArrowUpRight className="ml-1 h-3 w-3 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
                     </a>
                   </Button>
@@ -195,7 +196,8 @@ const Projects = () => {
                       rel="noopener noreferrer"
                     >
                       <ExternalLink className="mr-2 h-4 w-4" />
-                      Live Demo
+                      <span className="hidden sm:inline">Live Demo</span>
+                      <span className="sm:hidden">Demo</span>
                       <ArrowUpRight className="ml-1 h-3 w-3 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
                     </a>
                   </Button>

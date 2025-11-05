@@ -15,21 +15,21 @@ const About = () => {
   return (
     <SectionHeading text="About" id="about" className="overflow-hidden">
       <div className="flex items-center lg:h-[95vh]">
-        <div className="relative flex-1 px-4 py-12 md:px-12">
-          <h2 className="font-incognito text-2xl font-semibold md:text-5xl lg:text-4xl">
+        <div className="relative flex-1 px-4 py-8 sm:py-12 md:px-12">
+          <h2 className="font-incognito text-xl font-semibold sm:text-2xl md:text-5xl lg:text-4xl">
             Meet the Developer,
             <br />
             Not Just the Code
           </h2>
 
-          <HeadingLine className="mt-6" lineWidth={40} />
+          <HeadingLine className="mt-4 sm:mt-6" lineWidth={40} />
 
-          <Robot className="absolute top-6 -right-8 z-5 w-64 font-mono text-white max-md:scale-x-[-1] md:top-8 md:right-4">
+          <Robot className="absolute top-4 -right-6 z-5 w-48 font-mono text-white max-md:scale-x-[-1] sm:top-6 sm:-right-8 sm:w-64 md:top-8 md:right-4">
             <div className="max-md:scale-x-[-1]">Hey👋</div>
           </Robot>
 
-          <div className="text-foreground/70 bg-muted/20 relative z-10 mx-auto mt-6 max-w-3xl rounded-lg border-2 border-dotted text-sm leading-relaxed backdrop-blur-3xl md:text-base">
-            <div className="p-6">
+          <div className="text-foreground/70 bg-muted/20 relative z-10 mx-auto mt-4 max-w-3xl rounded-lg border-2 border-dotted text-sm leading-relaxed backdrop-blur-3xl sm:mt-6 md:text-base">
+            <div className="p-4 sm:p-6">
               <p className="">
                 I'm Patrick Francis, a full-stack developer and entrepreneur building apps that impact millions
                 <span className="mx-1 inline-block align-middle">
@@ -103,12 +103,12 @@ const About = () => {
               </p>
             </div>
 
-            <div className="border-t-2 border-dotted p-6">
+            <div className="border-t-2 border-dotted p-4 sm:p-6">
               <Button
                 asChild
                 size={"lg"}
                 variant={"outline"}
-                className="group border-2 font-medium"
+                className="group w-full border-2 font-medium sm:w-auto"
               >
                 <a href="#contact">
                   Contact Me
@@ -129,7 +129,7 @@ const About = () => {
             whileInView={{ opacity: 1, rotate: -2 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="relative py-4 md:w-72"
+            className="relative py-4 md:w-64 lg:w-72"
           >
             <div className="sticky top-8 h-auto w-full">
               {/* Stacked effect */}
@@ -137,7 +137,7 @@ const About = () => {
               <div className="bg-primary/20 absolute inset-0 rotate-1 rounded-2xl" />
 
               {/* Main card */}
-              <div className="bg-background relative rounded-2xl border-2 p-6 shadow-xl">
+              <div className="bg-background relative rounded-2xl border-2 p-4 shadow-xl sm:p-6">
                 <div className="text-center">
                   <div className="border-foreground/20 bg-muted/20 mb-4 overflow-hidden rounded-lg border-2 border-dashed p-4">
                     <img

@@ -18,31 +18,31 @@ const Hero = () => {
   });
 
   return (
-    <div className="relative flex flex-col justify-center overflow-hidden border-b pt-12">
+    <div className="relative flex flex-col justify-center overflow-hidden border-b pt-8 sm:pt-12">
       {/* Gradient background effect */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-violet-500/10 blur-3xl" />
         <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-blue-500/10 blur-3xl" />
       </div>
-      <div className="px-4 pb-6 md:px-8 md:pb-14 lg:px-20">
+      <div className="px-4 pb-4 sm:px-6 sm:pb-6 md:px-8 md:pb-14 lg:px-20">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="flex flex-col items-center gap-12 text-center md:flex-row md:text-left"
+          className="flex flex-col items-center gap-8 text-center sm:gap-12 md:flex-row md:text-left"
         >
           {/* Profile Image */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative"
+            className="relative shrink-0"
           >
             <div className="relative">
               <div className="absolute -inset-1 rotate-3 rounded-lg border-2" />
               <div className="absolute -inset-1 -rotate-3 rounded-lg border-2" />
-              <div className="bg-background relative rounded-lg border-2 p-2">
+              <div className="bg-background relative rounded-lg border-2 p-1.5 sm:p-2">
                 <Profile />
               </div>
             </div>
@@ -55,15 +55,15 @@ const Hero = () => {
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="mb-4 inline-flex items-center gap-2"
+              className="mb-3 inline-flex flex-wrap items-center justify-center gap-2 sm:mb-4 md:justify-start"
             >
-              <div className="bg-background border px-3 py-1">
-                <span className="text-foreground/60 font-mono text-xs">
+              <div className="bg-background border px-2.5 py-1 sm:px-3">
+                <span className="text-foreground/60 font-mono text-[10px] sm:text-xs">
                   {"<"} Hello World {"/>"}
                 </span>
               </div>
-              <div className="h-px w-12 bg-[#e1e1e1]" />
-              <span className="text-foreground/50 font-mono text-xs md:text-sm">
+              <div className="h-px w-8 bg-[#e1e1e1] sm:w-12" />
+              <span className="text-foreground/50 font-mono text-[10px] sm:text-xs md:text-sm">
                 Full-Stack Developer & Entrepreneur
               </span>
             </motion.div>
@@ -73,7 +73,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="font-incognito mb-4 text-3xl leading-tight font-semibold md:text-4xl lg:text-6xl"
+              className="font-incognito mb-3 text-2xl leading-tight font-semibold sm:mb-4 sm:text-3xl md:text-4xl lg:text-6xl"
             >
               <span className="text-foreground">Hey, I&apos;m </span>
               <span className="relative text-[#8cc2ff] italic">
@@ -92,7 +92,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-foreground/60 max-w-2xl text-sm font-light md:text-base"
+              className="text-foreground/60 mx-auto max-w-2xl text-sm font-light leading-relaxed sm:text-base md:mx-0"
             >
               Full-stack developer and entrepreneur building impactful mobile and web apps.
               Creator of PrayAi.org and FakeFlex.app - helping millions connect, grow, and thrive.
@@ -102,12 +102,12 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="mt-5 flex  items-center gap-4 max-md:justify-center max-md:mx-auto"
+              className="mt-4 flex w-full flex-col items-center gap-3 sm:mt-5 sm:flex-row sm:gap-4 md:w-auto md:justify-start"
             >
               <Button
                 asChild
                 size="lg"
-                className="group/btn border-2 font-medium"
+                className="group/btn w-full border-2 font-medium sm:w-auto"
               >
                 <a href={"#contact"}>
                   Lets Connect
@@ -118,11 +118,12 @@ const Hero = () => {
                 asChild
                 variant="outline"
                 size="lg"
-                className="group/btn border-2 font-medium"
+                className="group/btn w-full border-2 font-medium sm:w-auto"
               >
                 <Link href={"/resume.pdf"}>
                   <Download className="size-4 transition-transform group-hover/btn:translate-y-0.5" />
-                  Download resume
+                  <span className="sm:inline">Download resume</span>
+                  <span className="hidden max-sm:inline">Resume</span>
                 </Link>
               </Button>
             </motion.div>
@@ -145,15 +146,15 @@ const Hero = () => {
             <div
               key={i}
               className={cn(
-                "group hover:bg-foreground/5 relative p-8 text-center transition-colors",
+                "group hover:bg-foreground/5 relative p-4 text-center transition-colors sm:p-6 md:p-8",
                 i !== 3 && "border-r",
                 i < 2 && "border-b lg:border-b-0",
               )}
             >
-              <div className="text-foreground mb-2 text-3xl font-bold">
+              <div className="text-foreground mb-1 text-2xl font-bold sm:mb-2 sm:text-3xl">
                 <NumberTicker value={stat.value} />+
               </div>
-              <div className="text-foreground/50 font-mono text-xs tracking-wider uppercase">
+              <div className="text-foreground/50 font-mono text-[10px] tracking-wider uppercase sm:text-xs">
                 {stat.label}
               </div>
             </div>

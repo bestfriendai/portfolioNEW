@@ -58,7 +58,7 @@ export default function Contact() {
     <SectionHeading
       id="contact"
       text="Contact"
-      className="px-4 py-12 md:px-8 md:py-16"
+      className="px-4 py-8 sm:py-12 md:px-8 md:py-16"
     >
       <div className="absolute inset-0 size-full">
         <div className="before:bg-border after:bg-border relative h-full w-full before:absolute before:top-1/2 before:left-0 before:h-0.5 before:w-full after:absolute after:top-0 after:left-1/2 after:h-full after:w-0.5" />
@@ -92,7 +92,7 @@ export default function Contact() {
                         onKeyDown={handleEnter}
                         disabled={status === "sending" || status === "sent"}
                         autoComplete="email"
-                        className="border-foreground/20 text-foreground placeholder:text-foreground/40 w-full rounded-md border bg-transparent px-3 py-2 outline-none focus:border-emerald-400/60 focus:ring-2 focus:ring-emerald-400/30"
+                        className="border-foreground/20 text-foreground placeholder:text-foreground/40 w-full rounded-md border bg-transparent px-3 py-2.5 text-sm outline-none focus:border-emerald-400/60 focus:ring-2 focus:ring-emerald-400/30 sm:text-base"
                       />
                     </div>
                   </AnimatedSpan>
@@ -120,7 +120,7 @@ export default function Contact() {
                         onChange={(e) => setName(e.target.value)}
                         onKeyDown={handleEnter}
                         autoComplete="name"
-                        className="border-foreground/20 text-foreground placeholder:text-foreground/40 w-full rounded-md border bg-transparent px-3 py-2 outline-none focus:border-sky-400/60 focus:ring-2 focus:ring-sky-400/30"
+                        className="border-foreground/20 text-foreground placeholder:text-foreground/40 w-full rounded-md border bg-transparent px-3 py-2.5 text-sm outline-none focus:border-sky-400/60 focus:ring-2 focus:ring-sky-400/30 sm:text-base"
                       />
                     </div>
                   </AnimatedSpan>
@@ -140,26 +140,26 @@ export default function Contact() {
                   {/* A3 */}
                   <AnimatedSpan className="grid gap-2">
                     <div className="flex items-start gap-2 font-mono">
-                      <span className="mt-2 text-amber-400">↪</span>
+                      <span className="mt-2.5 text-amber-400 sm:mt-2">↪</span>
                       <textarea
                         required
                         rows={4}
                         placeholder="Tell me about your project, timeline, and goals…"
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
-                        className="border-foreground/20 text-foreground placeholder:text-foreground/40 w-full resize-y rounded-md border bg-transparent px-3 py-2 outline-none focus:border-amber-400/60 focus:ring-2 focus:ring-amber-400/30"
+                        className="border-foreground/20 text-foreground placeholder:text-foreground/40 w-full resize-y rounded-md border bg-transparent px-3 py-2.5 text-sm outline-none focus:border-amber-400/60 focus:ring-2 focus:ring-amber-400/30 sm:text-base"
                       />
                     </div>
                   </AnimatedSpan>
                   {/* Footer actions */}
                   <AnimatedSpan className="mt-2">
                     <div className="border-foreground/20 border-t border-dashed pt-4">
-                      <div className="flex items-center justify-end gap-2">
+                      <div className="flex flex-col items-stretch gap-2 sm:flex-row sm:items-center sm:justify-end">
                         <Button
                           type="button"
                           variant="outline"
                           onClick={onReset}
-                          className="border-foreground/20 bg-foreground/5 hover:bg-foreground/10 font-mono text-xs"
+                          className="border-foreground/20 bg-foreground/5 hover:bg-foreground/10 w-full font-mono text-xs sm:w-auto"
                         >
                           <X className="mr-1 h-3.5 w-3.5" />
                           Cancel
@@ -169,7 +169,7 @@ export default function Contact() {
                           disabled={
                             message.trim().length < 4 || status === "sending"
                           }
-                          className="border-foreground/20 bg-primary/10 text-foreground hover:bg-primary/20 border-2 font-mono text-xs disabled:cursor-not-allowed disabled:opacity-60"
+                          className="border-foreground/20 bg-primary/10 text-foreground hover:bg-primary/20 w-full border-2 font-mono text-xs disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
                         >
                           <Send className="mr-1 h-3.5 w-3.5" />
                           {status === "sending"
